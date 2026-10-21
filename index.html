@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chaitanya Kotlapati — Backend Engineer</title>
+  <meta name="description" content="Backend engineer (Go, Python) building APIs, distributed systems and cloud infrastructure. Co-Founder & Principal Architect at Avalon. IIT Madras M.Tech." />
+  <meta property="og:title" content="Chaitanya Kotlapati — Backend Engineer" />
+  <meta property="og:description" content="Go & Python backend engineer. Distributed systems, Kubernetes, AWS, Azure. Co-Founder at Avalon." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2316a34a'/><text x='50' y='68' font-size='52' font-family='monospace' text-anchor='middle' fill='white'>CK</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    // Apply saved theme before paint to avoid a flash
+    try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo">ck<span>.dev</span></a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark mode">◐</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero container">
+      <div class="hero-grid">
+      <div>
+      <p class="eyebrow mono">$ whoami</p>
+      <h1>Chaitanya Kotlapati</h1>
+      <p class="lead">
+        Backend engineer working in <strong>Go</strong> and <strong>Python</strong>. I build APIs,
+        distributed systems and cloud infrastructure, and I don't stop digging until I understand
+        why something works the way it does.
+      </p>
+      <p class="sub">
+        Co-Founder &amp; Principal Architect at <a href="https://useavalon.co" target="_blank" rel="noopener"><strong>Avalon</strong></a> · Previously Lead Backend Engineer at <strong>SecPod</strong> · M.Tech, <strong>IIT Madras</strong>
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="#contact">Get in touch</a>
+        <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Download résumé</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/chaitanya-kotlapati-720603155/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+      </div>
+      <img class="portrait" src="profile.jpg" alt="Chaitanya Kotlapati" width="640" height="800" />
+      </div>
+      <ul class="stats">
+        <li><span class="num">4+</span><span>years in backend</span></li>
+        <li><span class="num">~95%</span><span>misconfig detection accuracy</span></li>
+        <li><span class="num">200+</span><span>cloud resource types monitored</span></li>
+        <li><span class="num">5</span><span>engineers led</span></li>
+      </ul>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section container">
+      <h2><span class="mono num-label">01.</span> About me</h2>
+      <div class="about-grid">
+        <div class="prose">
+          <p>
+            I like hard problems. When something breaks or doesn't add up, I keep reading the code
+            and tracing the data until I can explain the root cause, not only the symptom.
+            That habit has shaped how I build things: I start by understanding the system,
+            then design, then write code.
+          </p>
+          <p>
+            Over four years I've gone from building scoring systems and real-time services at
+            SecPod, to leading its cloud-security backend team, to co-founding <strong>Avalon</strong>,
+            where I own the platform's backend architecture and infrastructure.
+          </p>
+        </div>
+        <aside class="card how">
+          <h3>How I build today</h3>
+          <ol>
+            <li><strong>Design first:</strong> architecture, data model, API contracts and failure modes, worked out before any code.</li>
+            <li><strong>Precise specs:</strong> I turn the design into tightly scoped prompts for Claude Code, so the code it writes needs fewer fixes.</li>
+            <li><strong>Review everything:</strong> every change gets read, tested and questioned before it merges.</li>
+          </ol>
+          <p class="muted small">AI handles the typing. I'm still responsible for the design and for whether the code is correct.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section container">
+      <h2><span class="mono num-label">02.</span> Experience</h2>
+      <ol class="timeline">
+        <li>
+          <div class="tl-head">
+            <h3>Co-Founder &amp; Principal Architect <span class="at">@ <a href="https://useavalon.co" target="_blank" rel="noopener">Avalon</a> (Isorropia AI)</span></h3>
+            <span class="date mono">May 2026 — Present</span>
+          </div>
+          <p class="muted">A zero-config, cloud-agnostic deployment platform. Point it at a repository and it generates the Dockerfiles and deploys the app, whatever the framework.</p>
+          <ul>
+            <li>Own the core backend architecture in Go, including auto-deployment triggered by GitHub webhook events.</li>
+            <li>Built a pre-deployment validation pipeline with automatic test-suite detection.</li>
+            <li>Building a code-analysis engine on <strong>tree-sitter</strong> AST parsing to detect frameworks, services and dependencies in any repository.</li>
+            <li>Design and operate the Azure / Kubernetes (AKS) infrastructure: provisioning, ingress and deployment orchestration.</li>
+            <li>Set technical direction as CTO and mentor a team of 2 interns.</li>
+          </ul>
+          <div class="tags"><span>Go</span><span>Kubernetes</span><span>AKS</span><span>Docker</span><span>tree-sitter</span><span>GitHub Webhooks</span></div>
+        </li>
+        <li>
+          <div class="tl-head">
+            <h3>Lead Software Engineer, Backend — Cloud Security <span class="at">@ <a href="https://www.secpod.com" target="_blank" rel="noopener">SecPod</a></span></h3>
+            <span class="date mono">May 2024 — May 2026</span>
+          </div>
+          <ul>
+            <li>Led a 5-member team building SecPod's CNAPP (cloud-native application protection platform) for AWS (IAM, EC2, S3, CloudTrail) and Azure (Entra ID, VMs). It covers the full lifecycle: <strong>discovery → compliance → detection → anomalies → remediation</strong>. I owned ~80% of the backend modules.</li>
+            <li>Built a misconfiguration detection engine with <strong>~95% accuracy</strong> that cut customer security incidents by <strong>~40%</strong>.</li>
+            <li>Optimized async/parallel collection pipelines for <strong>~20%</strong> better performance, extending monitoring to 200+ cloud resource types.</li>
+            <li>Engineered a centralized data-feed service for the security modules, which raised cross-team development productivity by ~35%.</li>
+          </ul>
+          <div class="tags"><span>Python</span><span>Flask</span><span>MongoDB</span><span>Redis</span><span>AWS</span><span>Azure</span><span>Async pipelines</span></div>
+        </li>
+        <li>
+          <div class="tl-head">
+            <h3>Software Engineer <span class="at">@ <a href="https://www.secpod.com" target="_blank" rel="noopener">SecPod</a></span></h3>
+            <span class="date mono">May 2022 — May 2024</span>
+          </div>
+          <ul>
+            <li>Built <strong>risk prioritization</strong>: an organization can have hundreds of thousands of open vulnerabilities, so the system ranks them by asset and configuration context, using decision-tree based scoring, to show which to fix first.</li>
+            <li>Built the <strong>CHS endpoint hygiene score</strong>, a dynamic score for every device based on the vulnerabilities, misconfigurations and risks on it. Scores reach the UI and reports through REST APIs (Python/Flask).</li>
+            <li>Built a generic WebSocket service (Java + Redis pub/sub) that streams real-time status to other applications.</li>
+            <li>Parallelized critical code paths to improve response times and reliability.</li>
+          </ul>
+          <div class="tags"><span>Python</span><span>Flask</span><span>MongoDB</span><span>Redis</span><span>Java</span><span>WebSockets</span></div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section container">
+      <h2><span class="mono num-label">03.</span> Selected projects</h2>
+      <div class="cards">
+        <article class="card project">
+          <div class="project-top"><span class="badge">Startup</span></div>
+          <h3>Avalon: zero-config deployments</h3>
+          <p>Connect a repo and Avalon works out the stack, generates the Dockerfile, runs the tests it finds and deploys to Kubernetes. Deployments are triggered by GitHub pushes.</p>
+          <div class="tags"><span>Go</span><span>AKS</span><span>tree-sitter</span></div>
+          <a class="project-link" href="https://useavalon.co" target="_blank" rel="noopener">useavalon.co ↗</a>
+        </article>
+
+        <article class="card project">
+          <div class="project-top"><span class="badge">Freelance · Germany</span><span class="badge soft">Pre-launch</span></div>
+          <h3>Online dance-class platform</h3>
+          <p>A Udemy-style platform for dance video courses, built for a client in Germany. I designed and implemented the whole backend: architecture, data model and APIs.</p>
+          <div class="tags"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span></div>
+        </article>
+
+        <article class="card project">
+          <div class="project-top"><span class="badge">SecPod</span></div>
+          <h3>CNAPP: cloud security platform</h3>
+          <p>An end-to-end cloud security platform for AWS and Azure. It <strong>discovers</strong> resources across 200+ types, checks <strong>compliance</strong>, <strong>detects</strong> misconfigurations (~95% accuracy), flags <strong>anomalies</strong> and drives <strong>remediation</strong>. It cut customer security incidents by ~40%.</p>
+          <div class="tags"><span>Python</span><span>Flask</span><span>MongoDB</span><span>Redis</span><span>AWS</span><span>Azure</span></div>
+          <a class="project-link" href="https://www.secpod.com/cloud-native-application-protection-platform" target="_blank" rel="noopener">Product overview ↗</a>
+        </article>
+
+        <article class="card project">
+          <div class="project-top"><span class="badge">SecPod</span></div>
+          <h3>CHS: endpoint hygiene score</h3>
+          <p>Gives every device a hygiene score based on the vulnerabilities, misconfigurations and risks on it, so teams can see a device's security posture in a single number and track it over time. The scores reach the UI and reports through REST APIs.</p>
+          <div class="tags"><span>Python</span><span>Flask</span><span>MongoDB</span><span>Redis</span></div>
+          <a class="project-link" href="https://www.secpod.com/learn/security-research/watch-your-cloud-hygiene-evolve-trend-analysis-in-saner-cloud-chs" target="_blank" rel="noopener">Read about CHS ↗</a>
+        </article>
+
+        <article class="card project">
+          <div class="project-top"><span class="badge">SecPod</span></div>
+          <h3>Risk prioritization</h3>
+          <p>An organization can have hundreds of thousands of open vulnerabilities, and nobody can fix them all at once. This system ranks them by asset criticality and configuration context, using decision-tree based scoring, so teams fix what matters first.</p>
+          <div class="tags"><span>Python</span><span>Flask</span><span>MongoDB</span><span>Redis</span></div>
+          <a class="project-link" href="https://www.secpod.com/product/risk-prioritization" target="_blank" rel="noopener">Product page ↗</a>
+        </article>
+
+        <article class="card project">
+          <div class="project-top"><span class="badge">Research · IIT Madras</span></div>
+          <h3>IRNSS signal processing (M.Tech thesis)</h3>
+          <p>Processing algorithms for the Signal Processing Subsystem of India's regional navigation satellite system: ephemeris computation, ionospheric delay, and satellite position/clock corrections. Supervised by Prof. V. Kamakoti.</p>
+          <div class="tags"><span>Algorithms</span><span>Satellite navigation</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section container">
+      <h2><span class="mono num-label">04.</span> Skills</h2>
+      <div class="skills">
+        <div><h4>Languages</h4><p>Go · Python · Java · C++</p></div>
+        <div><h4>Backend</h4><p>REST APIs · FastAPI · Gin · Flask · async/parallel processing · microservices · WebSockets</p></div>
+        <div><h4>Infrastructure</h4><p>Kubernetes · AKS · Docker · CI/CD · distributed systems</p></div>
+        <div><h4>Cloud</h4><p>Azure (AKS, Entra ID, VMs) · AWS (IAM, EC2, S3, CloudTrail, SQS, SNS)</p></div>
+        <div><h4>Data</h4><p>PostgreSQL · MongoDB · MySQL · Redis</p></div>
+        <div><h4>Ways of working</h4><p>System design · AI-assisted development (Claude Code) · code review · mentoring</p></div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section container">
+      <h2><span class="mono num-label">05.</span> Education</h2>
+      <div class="edu">
+        <div class="card">
+          <h3>M.Tech, Computer Science &amp; Engineering</h3>
+          <p class="muted">Indian Institute of Technology Madras · 2019 — 2022</p>
+          <p class="small">Teaching Assistant for Introduction to Programming, Artificial Intelligence and Natural Language Processing.</p>
+        </div>
+        <div class="card">
+          <h3>B.Tech, Computer Science &amp; Engineering</h3>
+          <p class="muted">JNTU Anantapur · 2015 — 2019</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container contact">
+      <h2><span class="mono num-label">06.</span> Let's talk</h2>
+      <p class="lead">I'm open to backend, platform and infrastructure roles. If you're working on hard problems, I'd like to hear about them.</p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:kcjnv22@gmail.com">kcjnv22@gmail.com</a>
+        <a class="btn" href="https://www.linkedin.com/in/chaitanya-kotlapati-720603155/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer muted small">
+    © <span id="year"></span> Chaitanya Kotlapati
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
