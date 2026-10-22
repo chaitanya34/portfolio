@@ -9,7 +9,7 @@ python3 -m http.server 8000
 # open http://localhost:8000
 ```
 
-Put your résumé in this folder as `resume.pdf` so the download buttons work.
+Put your résumé in this folder as `Chaitanya_Kotlapati_Resume_4_yoe.pdf` so the download buttons work.
 
 ## Deploy (free) with GitHub Pages
 
